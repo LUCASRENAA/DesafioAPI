@@ -10,34 +10,31 @@ class AuthorSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class ArticleSerializer(serializers.ModelSerializer):
+class ArticleSerializerCategory(serializers.ModelSerializer):
     author = AuthorSerializer
 
     class Meta:
         model = Article
         fields = ['id','author','category','title','summary']
-        #,'firstParagraph','body'
         depth = 1
 
 
-class ArticleSerializer2(serializers.ModelSerializer):
+class ArticleSerializerAnonymousUser(serializers.ModelSerializer):
     author = AuthorSerializer
 
     class Meta:
         model = Article
         fields = ['id','author','category','title','summary','firstParagraph']
-        #,'','body'
         depth = 1
 
 
 
-class ArticleSerializer3(serializers.ModelSerializer):
+class ArticleSerializerLoginUser(serializers.ModelSerializer):
     author = AuthorSerializer
 
     class Meta:
         model = Article
         fields = ['id','author','category','title','summary','firstParagraph','body']
-        #,'firstParagraph','body'
         depth = 1
 
 

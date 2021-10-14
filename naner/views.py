@@ -3,22 +3,15 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework.fields import CurrentUserDefault
+from rest_framework import viewsets
 
-from rest_framework import viewsets, generics
-from rest_framework import status
-from rest_framework.decorators import action, permission_classes, api_view, authentication_classes
-from rest_framework.views import APIView
 
 from naner.models import Author,Article
-from naner.serializer import AuthorSerializer, ArticleSerializer, ArticleSerializer2, ArticleSerializer3
-from rest_framework.response import Response
+from naner.serializer import AuthorSerializer, \
+    ArticleSerializerCategory, ArticleSerializerAnonymousUser, ArticleSerializerLoginUser
 
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication
-from rest_framework.permissions import IsAuthenticated, DjangoModelPermissionsOrAnonReadOnly, SAFE_METHODS, \
-    BasePermission
-from rest_framework.response import Response
-from rest_framework.views import APIView
+from rest_framework.permissions import  DjangoModelPermissionsOrAnonReadOnly
 
 
 
@@ -34,8 +27,6 @@ class UserPermission(permissions.BasePermission):
 
 
 class AuthorViewSet(viewsets.ModelViewSet):
-    #requet.user
-    """Listando todas as matrículas"""
 
 
     queryset = Author.objects.all()
@@ -43,7 +34,6 @@ class AuthorViewSet(viewsets.ModelViewSet):
     http_method_names = ['get', 'post', 'put', 'path']
 
 class ArticleViewSet(viewsets.ModelViewSet):
-    """Listando todas as matrículas"""
 
     authentication_classes = [SessionAuthentication, BasicAuthentication]
     permission_classes = [DjangoModelPermissionsOrAnonReadOnly,UserPermission]
@@ -51,21 +41,20 @@ class ArticleViewSet(viewsets.ModelViewSet):
 
 
 
-    serializer_class = ArticleSerializer
+    serializer_class = ArticleSerializerLoginUser
     def get_serializer_class(self):
         user = self.request.user
         print(user)
         try:
             if str(self.request.query_params['category']) != "":
-                return ArticleSerializer
+                return ArticleSerializerCategory
         except:
             if str(user) == "AnonymousUser":
-                return ArticleSerializer2
+                return ArticleSerializerAnonymousUser
             else:
-                return ArticleSerializer3
+                return ArticleSerializerLoginUser
     filter_backends = [DjangoFilterBackend]
     print("aqui")
-    #print(UserPermission.has_permission())
     print(permission_classes)
     print(authentication_classes)
     filterset_fields = ['category']
@@ -86,7 +75,7 @@ def login2(request):
             login(request, usuario)
             return HttpResponse("sucess")
         else:
-            return HttpResponse("failed")
+            return HttpResponse('401 Unauthorized', status=401)
     return HttpResponse("alo")
 
 @csrf_exempt
@@ -103,9 +92,8 @@ def submit_registro(request):
             return HttpResponse('Sucess')
 
         except:
-            #User.objects.get(usuario = usuario)
-            #User.objects.get(email = email)
-            return HttpResponse('Failed')
+
+            return HttpResponse('400 Bad Request', status=400)
 
 
     return HttpResponse('<h1> faça um post </h1>')

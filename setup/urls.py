@@ -18,11 +18,9 @@ urlpatterns = [
     path('api/admin/', admin.site.urls),
     path('', include(router.urls) ),
 
-    path('login/', views.login2),
-    path('registro/', views.submit_registro),
+    path('api/login/', views.login2),
+        path('api/sign-up/', views.submit_registro),
 
-    path('login2/', obtain_jwt_token),
     path('api-auth/', include('rest_framework.urls')),
-    #path('rest_auth/registration/', include('rest_auth.registration.urls'))
 
 ]  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
