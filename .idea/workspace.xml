@@ -5,9 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92278b08-4cd7-4766-9d6d-6fe182874a6d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naner/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/naner/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desafio.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16394" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16394" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16425" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16425" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16426" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16426" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16430" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16430" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16432" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16432" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16471" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16471" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16500" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16500" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16501" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16501" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16508" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16508" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16520" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16520" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16521" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16521" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16631" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16631" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16632" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16632" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16636" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16636" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16679" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16679" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16684" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16684" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16686" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16686" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16691" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16691" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16693" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16693" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/16694" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/16694" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/2665" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/2665" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/base/13757/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/base/13757/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/global/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/pg_stat_tmp/db_0.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_stat_tmp/db_0.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/pg_stat_tmp/db_13757.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_stat_tmp/db_13757.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/pg_stat_tmp/global.stat" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_stat_tmp/global.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/pg_xact/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/postmaster.pid" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/postmaster.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/naner/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/naner/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +69,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NANER\Desktop\Projetos\DesafioDjango - Copia\Naner_API-main" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,5 +84,16 @@
       <updated>1634233331043</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

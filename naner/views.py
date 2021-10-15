@@ -27,11 +27,12 @@ class UserPermission(permissions.BasePermission):
 
 
 class AuthorViewSet(viewsets.ModelViewSet):
-
+    authentication_classes = [SessionAuthentication, BasicAuthentication]
+    permission_classes = [DjangoModelPermissionsOrAnonReadOnly, UserPermission]
 
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
-    http_method_names = ['get', 'post', 'put', 'path']
+    http_method_names = ['get', 'post', 'put', 'path','delete']
 
 class ArticleViewSet(viewsets.ModelViewSet):
 
@@ -58,7 +59,7 @@ class ArticleViewSet(viewsets.ModelViewSet):
     print(permission_classes)
     print(authentication_classes)
     filterset_fields = ['category']
-    http_method_names = ['get', 'post', 'put', 'path']
+    http_method_names = ['get', 'post', 'put', 'path','delete']
 
 
 
@@ -76,7 +77,7 @@ def login2(request):
             return HttpResponse("sucess")
         else:
             return HttpResponse('401 Unauthorized', status=401)
-    return HttpResponse("alo")
+    return HttpResponse("Use POST")
 
 @csrf_exempt
 def submit_registro(request):
@@ -96,5 +97,5 @@ def submit_registro(request):
             return HttpResponse('400 Bad Request', status=400)
 
 
-    return HttpResponse('<h1> faça um post </h1>')
+    return HttpResponse("Use POST")
 
